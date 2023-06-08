@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    margin: auto;
+    height: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+.navbar_buttons{
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+    display: flex;   
+    align-items: center;
+    height: 100%;
+    font-size: 25px;
+    transition:0.5s;
+}
+
+.navbar_buttons:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.head_part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: 2rem;
+    padding: 5px 0px;
+
+}
+
+.head_part1-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.moto{
+    color: white;
+    margin-left: 1rem;
+    font-weight: 300;
+    font-size: medium;
+    letter-spacing: 3.7px;
+}
+.head_part2{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+    padding: auto;
+}
+
+.logo{
+    height: 3rem;
+    width: 3rem;
+   margin-right: 1rem;
+   margin-left: 3rem;
+    
+}
+.sec{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.head{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inside{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    height: 25rem;
+    width: 25rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+.slideshow-container{
+    position: relative;
+    z-index: 1;
+    
+}
+
+.slide {
+    display: none;
+    position: relative;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+  }
+  
+  .slide.active {
+    display: block;
+    opacity: 1;
+    
+    z-index: 1;
+    
+  }
+  
+  .slide img {
+    width: 100vw;
+    height: 30rem;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .text{
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    
+    text-align: center;
+  }
+  .text1{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 500;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        top: 2rem;
+  }
+
+.card-group{
+    margin-top: 3rem;
+}
+.card{
+    padding: 1rem;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  top: 10rem;
+  left: 33rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: blue;
+  z-index: 2;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.contact h2{
+    color: black;
+    margin-top: 3rem;
+    margin-left: 40rem;
+    margin-bottom: 2rem;
+}
+.address{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.form{
+    width: 50vw;
+    margin-bottom: 2rem;
+}
+.footer{
+    display: flex;
+    background-color: black;
+    height: 4rem;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+.foot-right{
+    margin-right: 5rem;
+}
+.copy{
+    background-color: white;
+    border-radius: 10rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
